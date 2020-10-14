@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
     });
   }
 
+  //TODO: Implement SliverApp Here.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -107,6 +108,7 @@ class _HomeState extends State<Home> {
           ),
           Expanded(
             child: GridView.builder(
+              physics: BouncingScrollPhysics(),
               padding:
                   const EdgeInsets.symmetric(horizontal: 15, vertical: 20.0),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -138,7 +140,7 @@ class _HomeState extends State<Home> {
           height: 20,
         ),
         onPressed: () {
-          Navigator.pop(context);
+//          Navigator.pop(context);
         },
       ),
       actions: <Widget>[

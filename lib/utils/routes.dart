@@ -1,2 +1,3 @@
 const String homeRoute = '/';
-const String productDetailsRoute = '/product_details';
+const String productDetailsRoute = '/product/details';
+const String productLiveViewRoute = '/product/live-view';

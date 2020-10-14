@@ -21,4 +21,5 @@ const defaultDarkColor = Color.fromRGBO(0, 0, 0, 1);
 const defaultDarkColorSec = Color.fromRGBO(0, 0, 0, 0.5);
 const defaultDarkColorSec60 = Color.fromRGBO(0, 0, 0, 0.6);
 const logoColor = Color.fromRGBO(0, 0, 0, 0.8);
+const logoColorDark = Color.fromRGBO(255, 255, 255, 0.8);
 const defaultLightColor = Colors.white;
