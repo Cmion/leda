@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:leda/model/Product.dart';
 import 'package:leda/utils/constants.dart';
 import 'package:leda/utils/logo.dart';
+import 'package:leda/utils/routes.dart';
 import 'package:leda/utils/utils.dart';
 
 class Details extends StatefulWidget {
@@ -22,6 +23,7 @@ class _DetailsState extends State<Details> with SingleTickerProviderStateMixin {
     });
   }
 
+  //TODO: Implement SliverApp Here.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +49,8 @@ class _DetailsState extends State<Details> with SingleTickerProviderStateMixin {
       height: MediaQuery.of(context).size.height * 0.55,
       child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, '/');
+          Navigator.pushNamed(context, productLiveViewRoute,
+              arguments: widget.product);
         },
         child: ClipRRect(
           borderRadius: BorderRadius.zero,
